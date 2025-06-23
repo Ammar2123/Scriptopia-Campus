@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "node check-types.js && node build.js",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "archiver": "^7.0.1",
+    "bcrypt": "^5.1.1",
+    "chalk": "^5.4.1",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.16",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.4",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@types/archiver": "^6.0.3",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^20.17.14",
+    "esbuild": "^0.25.5",
+    "tsx": "^4.7.1"
+  }
+}

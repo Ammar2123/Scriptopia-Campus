@@ -1,0 +1,6 @@
+/node_modules
+.env
+/src/static/*
+/src/certificates/*
+/server.log
+/performance-stats.json
